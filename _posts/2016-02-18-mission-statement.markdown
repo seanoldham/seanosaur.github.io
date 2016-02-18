@@ -4,7 +4,7 @@ title: Mission Statement
 layout: post
 tags: [meta]
 ---
-### Write more. Read more. Learn more.
+## Write more. Read more. Learn more.
 
 **Write more.**
 
