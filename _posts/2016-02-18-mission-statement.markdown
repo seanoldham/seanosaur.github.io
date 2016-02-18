@@ -12,8 +12,8 @@ Starting today. I'll write about anything and everything, whenever I get a chanc
 
 _Read more._
 
-Whether it's an audiobook or a basic paperback, I need to read more. I log my reading [over here](read.seanosaur.com).
+Whether it's an audiobook or a basic paperback, I need to read more. I log my reading [over here](http://read.seanosaur.com).
 
 _Learn more._
 
-I've been learning web development for over a year now. Lots to learn, still. Follow my progress on [GitHub](github.com/seanosaur) or join me in my [slashrocket](slashrocket.io) Slack community!
+I've been learning web development for over a year now. Lots to learn, still. Follow my progress on [GitHub](http://github.com/seanosaur) or join me in my [slashrocket](http://slashrocket.io) Slack community!
