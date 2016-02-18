@@ -1,6 +1,0 @@
----
-published: true
-title: Testing
-layout: post
----
-# Test Post\n\nThis is just a test.
