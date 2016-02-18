@@ -8,7 +8,7 @@ tags: [meta]
 
 ### _Write more._
 
-Starting today. I'll write about anything and everything, whenever I get a chance. I download lots of apps, and I'll write about each one. I do some programming stuff. That goes here, too.
+Starting today. I'll write about anything and everything, whenever I get a chance. I download lots of apps, and I'll write about each one. I do some programming stuff. That goes here, too. _Everything_, no joke.
 
 ### _Read more._
 
