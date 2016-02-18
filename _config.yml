@@ -3,6 +3,4 @@ pygments: true
 markdown: kramdown
 url: http://seanosaur.github.io
 title: Sean Oldham
-tagline: A log of everyday life
-description: My awesome new site
 paginate: 5
