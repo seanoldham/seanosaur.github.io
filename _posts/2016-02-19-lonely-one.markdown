@@ -3,7 +3,7 @@ published: false
 title: Lonely One
 layout: post
 ---
-![](http://i.imgur.com/WO6NtV4)
+![](http://i.imgur.com/WO6NtV4.png)
 
 Lonely One is a golf game. Playing as a (mostly naked?) man, your job is to hit the ball into the cup on the first shot of each hole. If you miss, you lose one of three lives.
 
