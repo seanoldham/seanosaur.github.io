@@ -2,6 +2,7 @@
 published: true
 title: Lonely One
 layout: post
+tags: [apps, games, reviews, sports]
 ---
 ![](http://i.imgur.com/WO6NtV4.png)
 
