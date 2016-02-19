@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Lonely One
 layout: post
 ---
