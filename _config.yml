@@ -1,6 +1,7 @@
 excerpt_separator: ""
-pygments: true
+highlighter: true
 markdown: kramdown
 url: http://seanosaur.github.io
 title: Sean Oldham
 paginate: 5
+gems: [jekyll-paginate]
