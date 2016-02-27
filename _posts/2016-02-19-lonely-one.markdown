@@ -4,9 +4,12 @@ title: Lonely One
 layout: post
 tags: [apps, games, reviews, sports]
 ---
-![](http://i.imgur.com/WO6NtV4.png)
 
 Lonely One is a golf game. Playing as a (mostly naked?) man, your job is to hit the ball into the cup on the first shot of each hole. If you miss, you lose one of three lives.
+
+<!--more-->
+
+![](http://i.imgur.com/WO6NtV4.png)
 
 It sounds easy, and for the most part it is. That is, until you have to hit the ball into a random head with an open mouth with gusts of wind, or other weird things of that nature. The good news is, if you get a "perfect" - hole in one with no bounces - you get an extra life.
 

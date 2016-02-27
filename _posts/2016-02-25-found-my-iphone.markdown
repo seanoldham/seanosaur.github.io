@@ -9,6 +9,8 @@ We got it back.
 
 Luckily, it was the bus that only drives around downtown. If it were a commuter or city bus, that phone would have been long gone.
 
+<!--more-->
+
 Here's the series of events:
 
 After work, she'll take the bus down to my office (and the car we drive home in) instead of walking. She got to my office and started frantically searching for her phone. No luck. I assumed it was still on the bus but we retraced her steps back to the bus stop just in case. Again, no luck.
