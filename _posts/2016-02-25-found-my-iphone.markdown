@@ -2,6 +2,7 @@
 published: true
 title: Found My iPhone
 layout: post
+tags: [life, personal, houston]
 ---
 My fiancé left her phone on the bus today.
 
