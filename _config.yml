@@ -4,4 +4,7 @@ markdown: kramdown
 url: http://seanosaur.github.io
 title: Sean Oldham
 paginate: 5
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
