@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Sean Oldham</title>
     <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.1.2/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+      html, body{
+        height: 100%;
+        color: #333;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+      }
+      canvas {
+        z-index: -1;
+        transition-property: background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 1s;
+      }
+      #container {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #content p, a {
+        color: inherit;
+      }
+    </style>
   </head>
-  <body class="sans-serif h-100">
-    <canvas id="canvas" class="absolute h-100 w-100 top-0 left-0"></canvas>
+  <body class="sans-serif">
+    <canvas id="canvas" class="absolute top-0 left-0"></canvas>
     <div id="container">
       <div id="content">
         <h1 class="tc mb3 f1 tracked small-caps">Sean Oldham</h1>
@@ -19,6 +43,34 @@
         <p class="tc f4 fw1 small-caps"><a href="http://seanosaur.com/blog" class="link">Blog</a></p>
       </div>
     </div>
-    <script src="fun.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      document.addEventListener('touchmove', function (e) {
+          e.preventDefault()
+      })
+      var body = document.getElementById('content'),
+          width = window.innerWidth,
+          height = window.innerHeight,
+          colorOne,
+          colorTwo,
+          colorThree
+      function changeBackground() {
+        colors();
+        var color = "rgba(" + colorOne + "," + colorTwo + "," + colorThree + ", 0.0625)"
+        var body = document.getElementsByTagName('body');
+        var stylesheet = document.styleSheets[1];
+        stylesheet.cssRules[0].style.backgroundColor = color;
+      }
+      function colors() {
+        colorOne = randomColor(255*1.25);
+        colorTwo = randomColor(255*2);
+        colorThree = randomColor(255*3);
+      }
+      var randomColor = function(multiplier) {
+        return Math.floor(Math.random()*multiplier);
+      };
+      document.onclick = changeBackground;
+      document.ontouchstart = changeBackground;
+      changeBackground();
+    </script>
   </body>
 </html>
