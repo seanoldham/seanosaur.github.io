@@ -15,11 +15,11 @@
         -moz-user-select: none;
         -webkit-user-select: none;
       }
-      canvas {
-        z-index: -1;
-        transition-property: background-color;
-        transition-timing-function: ease-out;
-        transition-duration: 1s;
+      body {
+        -webkit-transition: background-color 2500ms linear;
+        -moz-transition: background-color 2500ms linear;
+        -o-transition: background-color 2500ms linear;
+        transition: background-color 2500ms linear;
       }
       #container {
         height: inherit;
@@ -32,8 +32,7 @@
       }
     </style>
   </head>
-  <body class="sans-serif">
-    <canvas id="canvas" class="absolute top-0 left-0"></canvas>
+  <body id="body" class="sans-serif">
     <div id="container">
       <div id="content">
         <h1 class="tc mb3 f1 tracked small-caps">Sean Oldham</h1>
@@ -44,32 +43,24 @@
       </div>
     </div>
     <script type="text/javascript">
-      document.addEventListener('touchmove', function (e) {
-          e.preventDefault()
-      })
-      var body = document.getElementById('content'),
-          width = window.innerWidth,
-          height = window.innerHeight,
+      var body = document.getElementById('body'),
           colorOne,
           colorTwo,
           colorThree
       function changeBackground() {
         colors();
-        var color = "rgba(" + colorOne + "," + colorTwo + "," + colorThree + ", 0.0625)"
-        var body = document.getElementsByTagName('body');
-        var stylesheet = document.styleSheets[1];
-        stylesheet.cssRules[0].style.backgroundColor = color;
+        var color = "rgba(" + colorOne + "," + colorTwo + "," + colorThree + ", 0.25)"
+        body.style.backgroundColor = color;
       }
       function colors() {
-        colorOne = randomColor(255*1.25);
+        colorOne = randomColor(255*1.5);
         colorTwo = randomColor(255*2);
         colorThree = randomColor(255*3);
       }
       var randomColor = function(multiplier) {
         return Math.floor(Math.random()*multiplier);
       };
-      document.onclick = changeBackground;
-      document.ontouchstart = changeBackground;
+      setInterval(changeBackground, 2500);
       changeBackground();
     </script>
   </body>
