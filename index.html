@@ -43,25 +43,26 @@
       </div>
     </div>
     <script type="text/javascript">
-      var body = document.getElementById('body'),
-          colorOne,
-          colorTwo,
-          colorThree
-      function changeBackground() {
-        colors();
-        var color = "rgba(" + colorOne + "," + colorTwo + "," + colorThree + ", 0.25)"
-        body.style.backgroundColor = color;
-      }
-      function colors() {
-        colorOne = randomColor(255*1.5);
-        colorTwo = randomColor(255*2);
-        colorThree = randomColor(255*3);
-      }
-      var randomColor = function(multiplier) {
-        return Math.floor(Math.random()*multiplier);
-      };
-      setInterval(changeBackground, 2500);
-      changeBackground();
+    var heading = document.getElementById('heading'),
+        r,
+        g,
+        b
+    function changeColor() {
+      colors();
+      var color = "rgba(" + r + "," + g + "," + b + ", 1)"
+      heading.style.color = color;
+    }
+    function colors() {
+      r = randomColor(0, 100);
+      g = randomColor(100, 255);
+      b = randomColor(150, 255);
+    }
+    var randomColor = function(min, max) {
+      return Math.floor(Math.random()*(max-min)+min);
+    };
+    setInterval(changeColor, 10000);
+    changeColor();
+
     </script>
   </body>
 </html>
